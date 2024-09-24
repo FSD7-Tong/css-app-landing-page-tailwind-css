@@ -8,6 +8,75 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <!-- Start Coding Here -->
+    <!-- Tae's Section -->
+
+    <section
+      id="form-section"
+      class="w-full h-screen flex flex-col justify-center items-center text-[#1A1A2B]"
+    >
+      <div
+        id="form-box"
+        class="w-3/4 h-[650px] bg-[#FCFCFE] rounded-3xl flex flex-col justify-center items-center"
+      >
+        <h2 class="text-5xl font-bold text-[#1A1A2C]">Get in Touch</h2>
+        <form id="info-form" class="mt-12 w-2/5 flex flex-col gap-5">
+          <div class="flex flex-col gap-1">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="John Doe"
+              class="p-2 pl-3 rounded-lg h-9 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="john@example.com"
+              class="p-2 pl-3 rounded-lg h-9 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <label for="message">Message</label>
+            <textarea
+              name="text"
+              id="message"
+              placeholder="Your message..."
+              class="p-2 pl-3 rounded-xl resize-y min-h-24 max-h-36 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
+            ></textarea>
+          </div>
+        </form>
+        <button
+          type="submit"
+          class="mt-9 w-2/5 h-12 rounded-xl bg-[#1A1A2B] text-white hover:bg-[#5F5F76] duration-200 ease-linear active:border-[#5F5F76] active:bg-[#35354C] active:duration-0 active:border-4"
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <footer id="footer-section" class="flex justify-center text-[#1A1A2B]">
+      <div class="mb-28 w-3/4 flex justify-between">
+        <p>Acme productivity app ©2024</p>
+        <ul class="flex gap-7 font-semibold">
+          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
+            <a href="https://www.google.com/">FAQ</a>
+          </li>
+          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
+            <a href="https://www.google.com/">Terms</a>
+          </li>
+          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
+            <a href="https://www.google.com/">AI Policy</a>
+          </li>
+          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
+            <a href="https://www.google.com/">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
