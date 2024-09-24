@@ -1,0 +1,35 @@
+.nav-link a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tag p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.frame h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.frame-container button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .feature-group h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .feature-group p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
