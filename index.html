@@ -17,12 +17,17 @@
 
   <body class="bg-[#f6f6fb] m-0 p-0 box-border">
     <!---------------- Nav Bar + Hero Section ---------------->
-    <section class="container-nav flex flex-col justify-center items-center p-[24px] gap-[10px] h-[128px] w-full">
+    <section
+      class="container-nav max-[600px]:h-[80px] flex flex-col justify-center items-center p-[24px] gap-[10px] h-[128px] w-full"
+    >
       <nav
-        class="nav-bar-head bg-white flex flex-row items-center justify-between rounded-[99px] w-[1392px] h-[80px] pt-[12px] pr-[80px] pb-[12px] pl-[80px]"
+        class="nav-bar-head max-[600px]:relative max-[600px]:w-full max-[600px]:h-[48px] max-[600px]:pt-[12px] max-[600px]:pb-[12px] max-[600px]:pl-[24px] max-[600px]:pr-[24px] bg-white flex flex-row items-center justify-between rounded-[99px] w-[1392px] h-[80px] pt-[12px] pr-[80px] pb-[12px] pl-[80px]"
       >
-        <img class="logo-head w-[91.67px] h-[40px]" src="./logo.png" />
-        <div class="nav-wrapper flex w-[420px] h-[56px]">
+        <img
+          class="logo-head max-[600px]:absolute max-[600px]:w-[55px] max-[600px]:h-[24px] w-[91.67px] h-[40px]"
+          src="./logo.png"
+        />
+        <div class="nav-wrapper max-[600px]:hidden flex w-[420px] h-[56px]">
           <div
             class="nav-link hover:text-[#5e44ff] hover:underline w-[94px] h-[56px] pt-[16px] pr-[24px] pb-[16px] pl-[24px]"
           >
@@ -48,10 +53,10 @@
     </section>
 
     <section
-      class="container2 flex flex-col items-center justify-center w-full h-[968px] pt-[120px] pr-[120px] pb-[140px] pl-[120px] gap-[120px]"
+      class="container2 max-[600px]:pt-[10px] max-[600px]:pb-[80px] max-[600px]:pl-[16px] max-[600px]:pr-[16px] flex flex-col items-center justify-center w-full h-[968px] pt-[120px] pr-[120px] pb-[140px] pl-[120px] gap-[120px]"
     >
       <div
-        class="frame-container flex flex-col items-center w-[1200px] h-[316px] gap-10"
+        class="frame-container max-[600px]:gap-[40px] max-[600px]:w-[343px] max-[600px]:w-[392px] flex flex-col items-center w-[1200px] h-[316px] gap-10"
       >
         <div
           class="tag w-[236px] h-[40px] rounded-[999px] pt-[10px] pr-[20px] pb-[8px] pl-[20px] bg-[#563aff1a]"
@@ -61,15 +66,17 @@
           </p>
         </div>
 
-        <div class="frame flex flex-col w-[1200px] h-[140px] g-[24px]">
+        <div
+          class="frame max-[600px]:w-[343px] max-[600px]:h-[216px] max-[600px]:gap-[24px] flex flex-col w-[1200px] h-[140px]"
+        >
           <h1
-            class="text-center w-[1200px] h-[84px] text-[80px] leading-[84px]"
+            class="max-[600px]:w-[343px] max-[600px]:h-[96px] max-[600px]:text-[44px] max-[600px]:leading-[48px] text-center w-[1200px] h-[84px] text-[80px] leading-[84px]"
           >
             Boost Your
             <span class="text-product text-[#5e44ff]">Product</span>ivity
           </h1>
           <h3
-            class="text-center w-[1200px] h-[32px] text-[24px] leading-[32px]"
+            class="max-[600px]:w-[343px] max-[600px]:h-[96px] max-[600px]:text-[24px] max-[600px]:leading-[32px] text-center w-[1200px] h-[32px] text-[24px] leading-[32px]"
           >
             Streamline your workflow with our all-in-one productivity app.
           </h3>
@@ -83,7 +90,9 @@
       </div>
 
       <!------------------- feature section ------------------->
-      <section class="feature-group flex flex-row w-[1201px] h-[272px] gap-5">
+      <section
+        class="feature-group max-[600px]:flex-col max-[600px]:items-center flex flex-row w-[1201px] h-[272px] gap-5"
+      >
         <section
           class="feature-group1 flex flex-col w-[387px] h-[272px] rounded-3xl p-7 gap-10 bg-[#d7e5f6]"
         >
@@ -158,74 +167,5 @@
         </section>
       </section>
     </section>
-    <!-- Tae's Section -->
-
-    <section
-      id="form-section"
-      class="w-full h-[850px] flex flex-col justify-center items-center text-[#1A1A2B]"
-    >
-      <div
-        id="form-box"
-        class="w-3/4 h-[650px] bg-[#FCFCFE] rounded-3xl flex flex-col justify-center items-center"
-      >
-        <h2 class="text-5xl font-bold text-[#1A1A2C]">Get in Touch</h2>
-        <form id="info-form" class="mt-12 w-2/5 flex flex-col gap-5">
-          <div class="flex flex-col gap-1">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="John Doe"
-              class="p-2 pl-3 rounded-lg h-9 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
-            />
-          </div>
-
-          <div class="flex flex-col gap-1">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="john@example.com"
-              class="p-2 pl-3 rounded-lg h-9 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
-            />
-          </div>
-
-          <div class="flex flex-col gap-1">
-            <label for="message">Message</label>
-            <textarea
-              name="text"
-              id="message"
-              placeholder="Your message..."
-              class="p-2 pl-3 rounded-xl resize-y min-h-24 max-h-36 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
-            ></textarea>
-          </div>
-        </form>
-        <button
-          type="submit"
-          class="mt-9 w-2/5 h-12 rounded-xl bg-[#1A1A2B] text-white hover:bg-[#5F5F76] duration-200 ease-linear active:border-[#5F5F76] active:bg-[#35354C] active:duration-0 active:border-4"
-        >
-          Submit
-        </button>
-      </div>
-    </section>
-    <footer id="footer-section" class="flex justify-center text-[#1A1A2B]">
-      <div class="mb-28 w-3/4 flex justify-between">
-        <p>Acme productivity app ©2024</p>
-        <ul class="flex gap-7 font-semibold">
-          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
-            <a href="https://www.google.com/">FAQ</a>
-          </li>
-          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
-            <a href="https://www.google.com/">Terms</a>
-          </li>
-          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
-            <a href="https://www.google.com/">AI Policy</a>
-          </li>
-          <li class="ease-linear duration-200 hover:text-[#5E44FF]">
-            <a href="https://www.google.com/">Pricing</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>
