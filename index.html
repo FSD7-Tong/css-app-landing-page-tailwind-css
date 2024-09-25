@@ -17,7 +17,9 @@
 
   <body class="bg-[#f6f6fb] m-0 p-0 box-border">
     <!---------------- Nav Bar + Hero Section ---------------->
-    <section class="container-nav flex flex-col justify-center items-center p-[24px] gap-[10px] h-[128px] w-full">
+    <section
+      class="container-nav flex flex-col justify-center items-center p-[24px] gap-[10px] h-[128px] w-full"
+    >
       <nav
         class="nav-bar-head bg-white flex flex-row items-center justify-between rounded-[99px] w-[1392px] h-[80px] pt-[12px] pr-[80px] pb-[12px] pl-[80px]"
       >
@@ -158,6 +160,7 @@
         </section>
       </section>
     </section>
+
     <!-- Tae's Section -->
 
     <section
@@ -166,17 +169,20 @@
     >
       <div
         id="form-box"
-        class="w-3/4 h-[650px] bg-[#FCFCFE] rounded-3xl flex flex-col justify-center items-center"
+        class="w-11/12 h-[650px] bg-[#FCFCFE] md:w-11/12 lg:w-3/4 rounded-3xl flex flex-col justify-center items-center"
       >
         <h2 class="text-5xl font-bold text-[#1A1A2C]">Get in Touch</h2>
-        <form id="info-form" class="mt-12 w-2/5 flex flex-col gap-5">
+        <form
+          id="info-form"
+          class="w-11/12 mt-12 text-lg lg:text-base md:w-4/6 lg:w-3/6 flex flex-col gap-5"
+        >
           <div class="flex flex-col gap-1">
             <label for="name">Name</label>
             <input
               type="text"
               id="name"
               placeholder="John Doe"
-              class="p-2 pl-3 rounded-lg h-9 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
+              class="h-12 lg:h-9 p-2 pl-3 rounded-lg border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
             />
           </div>
 
@@ -186,7 +192,7 @@
               type="email"
               id="email"
               placeholder="john@example.com"
-              class="p-2 pl-3 rounded-lg h-9 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
+              class="h-12 lg:h-9 p-2 pl-3 rounded-lg border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
             />
           </div>
 
@@ -196,20 +202,22 @@
               name="text"
               id="message"
               placeholder="Your message..."
-              class="p-2 pl-3 rounded-xl resize-y min-h-24 max-h-36 border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
+              class="min-h-28 max-h-36 lg:min-h-24 p-2 pl-3 rounded-xl resize-y border-2 border-zinc-200 ease-linear duration-200 hover:border-[#B5A9FF] focus:border-[#5E44FF] focus:outline-none focus:duration-0"
             ></textarea>
           </div>
         </form>
         <button
           type="submit"
-          class="mt-9 w-2/5 h-12 rounded-xl bg-[#1A1A2B] text-white hover:bg-[#5F5F76] duration-200 ease-linear active:border-[#5F5F76] active:bg-[#35354C] active:duration-0 active:border-4"
+          class="mt-9 w-11/12 h-14 md:w-4/6 lg:w-3/6 lg:h-12 text-lg lg:text-base rounded-xl bg-[#1A1A2B] text-white hover:bg-[#5F5F76] duration-200 ease-linear active:border-[#5F5F76] active:bg-[#35354C] active:duration-0 active:border-4"
         >
           Submit
         </button>
       </div>
     </section>
     <footer id="footer-section" class="flex justify-center text-[#1A1A2B]">
-      <div class="mb-28 w-3/4 flex justify-between">
+      <div
+        class="mb-24 w-3/4 flex flex-col gap-6 md:w-11/12 lg:w-3/4 md:flex-row items-center justify-between"
+      >
         <p>Acme productivity app ©2024</p>
         <ul class="flex gap-7 font-semibold">
           <li class="ease-linear duration-200 hover:text-[#5E44FF]">
